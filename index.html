@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/css/style.css" />
+    <script src="src/js/pomodoro.js"></script>
+    <script src="src/js/app.js"></script>
+</head>
+<body>
+    <h1>Pomodoro Clock</h1>
+    <div id="pomodoro">
+        <div id="break-section" class="half">
+            <div id="break-label" class="label">Break Length</div>
+            <button id="break-increment" class="smallBtn">+</button>
+            <div id="break-length" class="length"></div>
+            <button id="break-decrement" class="smallBtn">-</button>
+            
+        </div>
+        <div id="session-section" class="half">
+            <div id="session-label" class="label">Session Length</div>
+            <button id="session-increment" class="smallBtn">+</button>
+            <div id="session-length" class="length"></div>
+            <button id="session-decrement" class="smallBtn">-</button>
+            
+        </div>
+        <div id="timer-section" class="full">
+            <div id="timer-label">Session</div>
+            <div id="time-left"></div>
+        </div>
+        <div id="buttons-section" class="full">
+            <button id="start_stop" class="largeBtn">Start</button>
+            <button id="reset" class="largeBtn">Reset</button>
+        </div>
+    </div>
+    <audio preload="none" id="beep">
+        <source src="src/audio/beep.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
